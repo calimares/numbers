@@ -1,0 +1,36 @@
+<div class="jumbotron">
+    <h1>Números escritos</h1>
+    <p class="lead"></p>
+    <form>
+        <input is-number type="text" ng-model="nlnumber" class="form-control input-lg" placeholder="Ej: 123" autofocus>    
+    </form>
+    <br/>
+    <div class="well well-lg">
+        <blockquote tooltip data-toggle="tooltip" data-placement="bottom" title="Click para seleccionar el texto">
+            <p select-on-click >{{nlnumber| toLetters | capitalize}}</p>
+        </blockquote>
+    </div>
+</div>
+
+<div class="row marketing">
+    <div class="col-lg-6">
+        <h4>En tiempo real</h4>
+        <p>A medida que vas ingresando el número ves cómo se escribe.</p>
+
+        <h4>En español</h4>
+        <p>Incluye los tildes correspondientes; 23 es veintitrés.</p>
+        
+        <h4>Próximamente</h4>
+        <p>Números con decimales y ordinales.</p>
+
+    </div>
+
+    <div class="col-lg-6">
+        <h4>Fácil de compartir</h4>
+        <p>Luego de ingresar el número, puedes copiar la url y compartirla.</p>
+
+        <h4>Números <strong>muy</strong> grandes</h4>
+        <p>Estamos hablando de números de más de sesenta y cuatro dígitos.</p>
+
+    </div>
+</div>
