@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" ng-app="app">
+<html lang="es" data-ng-app="app">
     <head>
         <meta charset="utf-8">
         <title>Escribir números en español</title>
@@ -15,7 +15,7 @@
         <script src="bower_components/bootstrap/js/tooltip.js"></script>
         <script src="js/app.js"></script>
         <script src="js/controllers.js"></script>
-        <script src="js/filters.js"></script>
+        <script src="js/filters.js?v=2"></script>
         <script src="js/services.js"></script>
         <script src="js/directives.js"></script>
         <base href="/">
@@ -35,7 +35,7 @@
                 <h3 class="text-muted">Convertir números a letras</h3>
             </div>
 
-            <div ng-view class="view-frame"></div>
+            <div data-ng-view class="view-frame"></div>
 
             <footer class="footer">
                 <p>&copy; EscribirNúmeros 2015</p>
